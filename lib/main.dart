@@ -40,6 +40,12 @@ class FirstPage extends StatelessWidget {
         elevation: 6,
         titleSpacing: 12,
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add_location),
+        onPressed: () {
+          print('object');
+        },
+      ),
     );
   }
 }
