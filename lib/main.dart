@@ -18,7 +18,7 @@ class FirstPage extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.menu),
           onPressed: () {
-            print('クリック！');
+            print('メニュークリック！');
           }
         ),
         actions: <Widget>[
@@ -42,10 +42,26 @@ class FirstPage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add_location),
+        backgroundColor: Colors.green,
         onPressed: () {
-          print('object');
+          print('FABクリック！');
         },
+        // mini: true,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12)
+        ),
+        // elevation: 10,
+        highlightElevation: 1,
       ),
+      // floatingActionButton: FloatingActionButton.extended(
+      //   icon: Icon(Icons.message),
+      //   label: Text('Message'),
+      //   onPressed: () {
+      //     print('object');
+      //   },
+      //   foregroundColor: Colors.orange,
+      //   backgroundColor: Colors.black,
+      // ),
     );
   }
 }
